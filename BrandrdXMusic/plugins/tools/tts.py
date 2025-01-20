@@ -25,17 +25,17 @@ async def text_to_speech(client, message):
 
 
 __HELP__ = """
-**ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ**
+**Text To Speech Bot Command**
 
-ᴜsᴇ ᴛʜᴇ `/tts` ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ɪɴᴛᴏ sᴘᴇᴇᴄʜ.
+Use The `/tts` Command To Convert Text Into Speech.
 
-- `/tts <ᴛᴇxᴛ>`: ᴄᴏɴᴠᴇʀᴛs ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ ɪɴ ʜɪɴᴅɪ.
+- `/tts <Text>`: Converts The Given Text To Speech In Hindi.
 
-**ᴇxᴀᴍᴘʟᴇ:**
+**Example:**
 - `/tts Namaste Duniya`
 
-**ɴᴏᴛᴇ:**
-ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ ᴘʀᴏᴠɪᴅᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴀғᴛᴇʀ ᴛʜᴇ `/tts` ᴄᴏᴍᴍᴀɴᴅ.
+**Note:**
+Make Sure To Provide Some Text After The `/tts` Command.
 """
 
-__MODULE__ = "Tᴛs"
+__MODULE__ = "TTS"
