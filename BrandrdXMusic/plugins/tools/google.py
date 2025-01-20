@@ -17,7 +17,7 @@ async def google(bot, message):
         user_input = message.reply_to_message.text
     else:
         user_input = " ".join(message.command[1:])
-    b = await message.reply_text("**Sᴇᴀʀᴄʜɪɴɢ ᴏɴ Gᴏᴏɢʟᴇ....**")
+    b = await message.reply_text("**Searching On Google....**")
     try:
         a = search(user_input, advanced=True)
         txt = f"Search Query: {user_input}\n\nresults"
@@ -42,7 +42,7 @@ async def app(bot, message):
         user_input = message.reply_to_message.text
     else:
         user_input = " ".join(message.command[1:])
-    cbb = await message.reply_text("**Sᴇᴀʀᴄʜɪɴɢ ᴏɴ Pʟᴀʏ Sᴛᴏʀᴇ....**")
+    cbb = await message.reply_text("**Searching On Play Store....**")
     a = await SafoneAPI().apps(user_input, 1)
     b = a["results"][0]
     icon = b["icon"]
@@ -51,7 +51,7 @@ async def app(bot, message):
     ca = b["description"]
     title = b["title"]
     dev = b["developer"]
-    info = f"<b>[ᴛɪᴛʟᴇ : {title}]({link})</b>\n<b>ɪᴅ</b>: <code>{id}</code>\n<b>ᴅᴇᴠᴇʟᴏᴘᴇʀ</b> : {dev}\n<b>ᴅᴇsᴄʀɪᴘᴛɪᴏɴ </b>: {ca}"
+    info = f"<b>[Title : {title}]({link})</b>\n<b>ɪᴅ</b>: <code>{id}</code>\n<b>Developer</b> : {dev}\n<b>Description </b>: {ca}"
     try:
         await message.reply_photo(icon, caption=info)
         await cbb.delete()
