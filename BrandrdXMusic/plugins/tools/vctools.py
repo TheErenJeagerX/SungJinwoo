@@ -25,13 +25,13 @@ async def brah(_, msg):
 # vc off
 @app.on_message(filters.video_chat_ended)
 async def brah2(_, msg):
-    await msg.reply("**˹ ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍ sᴛᴀʀᴛᴇᴅ ˼**")
+    await msg.reply("**˹ ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ ˼**")
 
 
 # invite members on vc
 @app.on_message(filters.video_chat_members_invited)
 async def brah3(app: app, message: Message):
-    text = f"˹  {message.from_user.mention}\n\n**๏ ɪɴᴠɪᴛɪɴɢ ɪɴ ᴠᴄ ᴛᴏ :**\n\n**˼ **"
+    text = f"•  {message.from_user.mention}\n\n**๏ ɪɴᴠɪᴛɪɴɢ ɪɴ ᴠᴄ ᴛᴏ :**\n\n**• **"
     x = 0
     for user in message.video_chat_members_invited.users:
         try:
