@@ -33,12 +33,12 @@ async def google_img_search(client: Client, message: Message):
     except Exception as e:
         return await message.reply(f"Error in downloading images: {e}")
 
-    msg = await message.reply("𝔹𝕣𝕒𝕟𝕕𝕖𝕕𝕏𝕄𝕒𝕟𝕒𝕘𝕖𝕞𝕖𝕟𝕥 Scrapping images...")
+    msg = await message.reply("Sung Jin-Woo scrapped images...")
 
     count = 0
     for img in lst:
         count += 1
-        await msg.edit(f"=> 𝔹𝕣𝕒𝕟𝕕𝕖𝕕𝕏𝕄𝕒𝕟𝕒𝕘𝕖𝕞𝕖𝕟𝕥 owo scrapped images {count}")
+        await msg.edit(f"Sung Jin-Woo scrapped images {count}")
 
     try:
         await app.send_media_group(
