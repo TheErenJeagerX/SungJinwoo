@@ -75,11 +75,11 @@ You Can Stream Audio/Video In Channel.
 """
 
 HELP_7 = """
-<u><b>ɢʟᴏʙᴀʟ ʙᴀɴ ғᴇᴀᴛᴜʀᴇ</b></u> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] :
+<u><b>Punishment Feature</b></u> [Only For Hunters] :
 
 /gban [Username Or Reply To A User] : Globally Banning The Person From All The Served Chats And Blacklist Him From Using The Bot.
 /ungban [Username Or Reply To A User] : Globally Unbans The Globally Banned User.
-/gbannedusers : Show's The List Of Globally Banned Users.
+/gbannedusers : Show's The List Of Punished Users.
 """
 
 HELP_8 = """
