@@ -1,52 +1,37 @@
-import random
-import re
-import string
-
-import lyricsgenius as lg
-from pyrogram import Client, filters
+import requests
+from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from BrandrdXMusic import app
-from BrandrdXMusic.utils.decorators.language import language
+from config import BANNED_USERS
 
-from config import BANNED_USERS, lyrical
 
-api_key = "fcXGwudRZTE8zdMOYKNMoRGIWfBjca_4s5wF5keHeCTd68yURmceO4MGhAbyx-qp"
-y = lg.Genius(
-    api_key,
-    skip_non_songs=True,
-    excluded_terms=["(Remix)", "(Live)"],
-    remove_section_headers=True,
-)
-y.verbose = False
-
-@app.on_message(filters.command(["lyrics"]) & ~BANNED_USERS)
-async def lrsearch(client, message: Message):
+@app.on_message(filters.command("lyrics") & ~BANNED_USERS)
+async def lyrics_search(client, message: Message):
     if len(message.command) < 2:
-        return await message.reply_text(_["lyrics_1"])
+        return await message.reply_text("❌ Please provide the song title!")
 
     title = message.text.split(None, 1)[1]
-    m = await message.reply_text(_["lyrics_2"])
-    
-    S = y.search_song(title, get_full_info=False)
-    if S is None:
-        return await m.edit(_["lyrics_3"].format(title))
+    m = await message.reply_text("🔍 Searching for lyrics...")
 
-    ran_hash = "".join(random.choices(string.ascii_uppercase + string.digits, k=10))
-    lyric = S.lyrics
-    if "Embed" in lyric:
-        lyric = re.sub(r"\d*Embed", "", lyric)
-    lyrical[ran_hash] = lyric
+    # API request to ovh.lyrics
+    try:
+        response = requests.get(f"https://api.lyrics.ovh/v1/{title}")
+        if response.status_code == 200:
+            data = response.json()
+            lyrics = data.get("lyrics", None)
 
-    upl = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(
-                    text=_["L_B_1"],
-                    url=f"https://t.me/{app.username}?start=lyrics_{ran_hash}",
-                ),
-            ]
-        ]
-    )
-    
-    await m.edit(_["lyrics_4"], reply_markup=upl)
+            if not lyrics:
+                return await m.edit(f"❌ No lyrics found for `{title}`.")
+            
+            # Displaying lyrics
+            if len(lyrics) > 4000:  # If lyrics exceed Telegram message limit
+                return await m.edit(
+                    "⚠️ Lyrics are too long to display here. Please check an external source."
+                )
+
+            await m.edit(f"🎵 **Lyrics for** `{title}`:\n\n{lyrics}")
+        else:
+            await m.edit(f"❌ Lyrics not found for `{title}`.")
+    except Exception as e:
+        await m.edit(f"❌ Error occurred: {e}")
