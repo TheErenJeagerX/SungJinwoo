@@ -4,56 +4,112 @@ class Helper(object):
     HELP_M = '''ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀʏ ғᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴩ.
 ᴀsᴋ ʏᴏᴜʀ ᴅᴏᴜʙᴛs ᴀᴛ sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ
 
-    HELP_Reel = '''Reel
+ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /'''
+    HELP_ChatGPT = '''CʜᴀᴛGPT
 
-Reel Commands:
+CʜᴀᴛGPT ᴄᴏᴍᴍᴀɴᴅꜱ:
 
-/ig [URL] ➠ Temporary Removed.
-/instagram [URL] ➠ Temporary Removed .
-/reel [URL]  ➠ Temporary Removed .
+/ask ➠ ǫᴜᴇʀɪᴇs ᴛʜᴇ ᴀɪ ᴍᴏᴅᴇʟ ᴛᴏ ɢᴇᴛ ᴀ ʀᴇsᴘᴏɴsᴇ ᴛᴏ ʏᴏᴜʀ ǫᴜᴇsᴛɪᴏɴ.
 '''
-    HELP_Info = '''Info
 
-Info Commands:
+    HELP_Reel = '''Rᴇᴇʟ
 
-/id : Get The Current Group Id. If Used By Replying To A Message, Gets That User's Id.
+Rᴇᴇʟ ᴄᴏᴍᴍᴀɴᴅꜱ:
+
+/ig [URL] ➠ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟs. Pʀᴏᴠɪᴅᴇ ᴛʜᴇ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ URL ᴀғᴛᴇʀ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ.
+/instagram [URL] ➠ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟs. Pʀᴏᴠɪᴅᴇ ᴛʜᴇ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ URL ᴀғᴛᴇʀ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ.
+/reel [URL]  ➠ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟs. Pʀᴏᴠɪᴅᴇ ᴛʜᴇ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ URL ᴀғᴛᴇʀ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ.
 '''
-    HELP_History = '''History
 
-History Commands:
+    HELP_TagAll = '''Tᴀɢ
 
-These Are The Available Group Management Commands:
+  Tᴀɢ ᴄᴏᴍᴍᴀɴᴅꜱ:
 
-⊹ /Sg Or /History
-Description: 
-• Fetches A Random Message From A User's Message History.
+✿ ᴄʜᴏᴏsᴇ ᴛᴀɢ ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ ✿
 
-Usage:
-⊹ /Sg [Username/Id/Reply]
+๏ /gmtag ➛ ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 
+ᴛᴀɢ sᴛᴏᴘ ⇴ /gmstop
 
-Details:
-⊹ Fetches A Random Message From The Message History Of The Specified User.
-⊹ Can Be Used By Providing A Username, User ID, Or Replying To A Message From The User.
-⊹ Accesibe Only By The Bot's Assistants.
+๏ /gntag ➛ ɢᴏᴏᴅ ɴɪɢʜᴛ ᴛᴀɢ sᴛᴏᴘ ⇴ /gnstop
+
+๏ /tagall ➛ ʀᴀɴᴅᴏᴍ ᴍᴇssᴀɢᴇ ᴛᴀɢ sᴛᴏᴘ ⇴ /tagoff /tagstop
+
+๏ /hitag ➛ ʀᴀɴᴅᴏᴍ ʜɪɴᴅɪ ᴍᴇssᴀɢᴇ ᴛᴀɢ sᴛᴏᴘ ⇴/histop
+
+๏ /shayari ➛ ʀᴀɴᴅᴏᴍ sʜᴀʏᴀʀɪ ᴛᴀɢ sᴛᴏᴘ ⇴ /shstop
+
+๏ /utag ➛ ᴀɴʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ ᴛᴀɢ sᴛᴏᴘ ⇴ /cancel
+'''
+
+    HELP_Info = '''Iɴꜰᴏ
+
+Iɴꜰᴏ ᴄᴏᴍᴍᴀɴᴅꜱ:
+
+/id : ɢᴇᴛ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ɢʀᴏᴜᴘ ɪᴅ. ɪғ ᴜsᴇᴅ ʙʏ ʀᴇᴘʟʏɪɴɢ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ, ɢᴇᴛs ᴛʜᴀᴛ ᴜsᴇʀ's ɪᴅ.
+/info : ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜsᴇʀ.
+'''
+    HELP_History = '''Hɪsᴛᴏʀʏ
+
+Hɪsᴛᴏʀʏ ᴄᴏᴍᴍᴀɴᴅꜱ:
+
+ᴛʜᴇsᴇ ᴀʀᴇ ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴄᴏᴍᴍᴀɴᴅs:
+
+⦿ /sɢ ᴏʀ /Hɪsᴛᴏʀʏ
+Dᴇsᴄʀɪᴘᴛɪᴏɴ:
+⦿ Fᴇᴛᴄʜᴇs ᴀ ʀᴀɴᴅᴏᴍ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴀ ᴜsᴇʀ's ᴍᴇssᴀɢᴇ ʜɪsᴛᴏʀʏ.
+
+Usᴀɢᴇ:
+⦿ /sɢ [ᴜsᴇʀɴᴀᴍᴇ/ɪᴅ/ʀᴇᴘʏ]
+
+Dᴇᴛᴀɪs:
+⦿ Fᴇᴛᴄʜᴇs ᴀ ʀᴀɴᴅᴏᴍ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇssᴀɢᴇ ʜɪsᴛᴏʀʏ ᴏғ ᴛʜᴇ sᴘᴇᴄɪғɪᴇᴅ ᴜsᴇʀ.
+⦿ Cᴀɴ ʙᴇ ᴜsᴇᴅ ʙʏ ᴘʀᴏᴠɪᴅɪɴɢ ᴀ ᴜsᴇʀɴᴀᴍᴇ, ᴜsᴇʀ ID, ᴏʀ ʀᴇᴘʏɪɴɢ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴛʜᴇ ᴜsᴇʀ.
+⦿ Aᴄᴄᴇssɪʙᴇ ᴏɴʏ ʙʏ ᴛʜᴇ ʙᴏᴛ's ᴀssɪsᴛᴀɴᴛs.
 
 Exᴀᴍᴘᴇs:
-⊹ /Sg Username`
-⊹ /sg User_Id`
-⊹ /sg [Reply To A Message]`
+⦿ /sɢ ᴜsᴇʀɴᴀᴍᴇ`
+⦿ /sɢ ᴜsᴇʀ_ɪᴅ`
+⦿ /sɢ [ʀᴇᴘʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ]`
+'''
+
+    HELP_Couples = '''ᴄᴏᴜᴘʟᴇꜱ
+
+ᴄᴏᴜᴘʟᴇꜱ ᴄᴏᴍᴍᴀɴᴅꜱ:
+
+/couples - ᴄʜᴏᴏsᴇ 2 ᴜsᴇʀs ᴀɴᴅ sᴇɴᴅ ᴛʜᴇɪʀ ɴᴀᴍᴇ ᴀs ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.
 '''
 
     HELP_Extra = '''Exᴛʀᴀ
 
 Exᴛʀᴀ ᴄᴏᴍᴍᴀɴᴅꜱ:
 
-⊹ /tgm • Uploads A Photo (Under 5MB) To The Cloud And Gives A Link.
-⊹ /paste • Uploads A Text Snippet To The Cloud And Gives A Link.
-⊹ /tr • Translates Text.
+⦿ /tgm ➠ ᴜᴘʟᴏᴀᴅs ᴀ ᴘʜᴏᴛᴏ (ᴜɴᴅᴇʀ 𝟻ᴍʙ) ᴛᴏ ᴛʜᴇ ᴄʟᴏᴜᴅ ᴀɴᴅ ɢɪᴠᴇs ᴀ ʟɪɴᴋ.
+⦿ /paste ➠ ᴜᴘʟᴏᴀᴅs ᴀ ᴛᴇxᴛ sɴɪᴘᴘᴇᴛ ᴛᴏ ᴛʜᴇ ᴄʟᴏᴜᴅ ᴀɴᴅ ɢɪᴠᴇs ᴀ ʟɪɴᴋ.
+⦿ /tr ➠ ᴛʀᴀɴsʟᴀᴛᴇs ᴛᴇxᴛ.
 '''
+    HELP_Action = '''Aᴄᴛɪᴏɴ
 
-    HELP_Search = '''Seaech
+Aᴄᴛɪᴏɴ ᴄᴏᴍᴍᴀɴᴅꜱ:
 
-Search Commands:
+» ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ꜰᴏʀ Bᴀɴs & Mᴜᴛᴇ :
+
+ ❍ /kickme: kicks the user who issued the command
+
+Admins only:
+ ❍ /ban <userhandle>: bans a user. (via handle, or reply)
+ ❍ /sban <userhandle>: Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
+ ❍ /tban <userhandle> x(m/h/d): bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
+ ❍ /unban <userhandle>: unbans a user. (via handle, or reply)
+ ❍ /kick <userhandle>: kicks a user out of the group, (via handle, or reply)
+ ❍ /mute <userhandle>: silences a user. Can also be used as a reply, muting the replied to user.
+ ❍ /tmute <userhandle> x(m/h/d): mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
+ ❍ /unmute <userhandle>: unmutes a user. Can also be used as a reply, muting the replied to user.
+__
+𝐒ᴘᴇᴄɪᴀʟ 𝐂ᴏᴍᴍᴀɴᴅs 𝐒ᴜᴘᴘᴏʀᴛ 𝐀ʟʟ 𝐄xᴀᴍᴘʟᴇ  - Bɾαɳԃҽԃ  Ⴆαɳ Ⴆɾαɳԃҽԃ ɱυƚҽ Ⴆɾαɳԃҽԃ ρɾσɱσƚҽ ..... 𝚎𝚝𝚌
+'''
+    HELP_Search = '''Sᴇᴀʀᴄʜ
+
+Sᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅꜱ:
 
 • /google <query> : Search the google for the given query.
 • /image (/imgs) <query> : Get the images regarding to your query
@@ -62,73 +118,80 @@ Example:
 /google pyrogram: return top 5 reuslts.
 '''
 
-    HELP_Font = '''Font
+    HELP_Font = '''ғᴏɴᴛ
 
-Here Is The Help For The Font Module:
+ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ғᴏɴᴛ ᴍᴏᴅᴜʟᴇ:
 
-Font Module:
+ғᴏɴᴛ ᴍᴏᴅᴜʟᴇ:
 
-By Using This Module You Can Change Fonts  Of Any Text!
+ʙʏ ᴜsɪɴɢ ᴛʜɪs ᴍᴏᴅᴜʟᴇ ʏᴏᴜ ᴄᴀɴ ᴄʜᴀɴɢᴇ ғᴏɴᴛs ᴏғ ᴀɴʏ ᴛᴇxᴛ!
 
-⊹ /font [Text]
+◌ /font [ᴛᴇxᴛ]
 '''
-    HELP_Bots = '''Bots
+    HELP_Bots = '''Bᴏᴛs
 
-Here Is The Help For The Bots Module:
-Bots Module:
+ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ Bᴏᴛs ᴍᴏᴅᴜʟᴇ:
+ɢᴀᴍᴇs ᴍᴏᴅᴜʟᴇ:
 
-⊹ /bots - Get A List Of Bots In The Groul.
+◌ /bots - ɢᴇᴛ ᴀ ʟɪsᴛ ᴏғ ʙᴏᴛs ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ.
 '''
-    HELP_TG = '''Telegraph
+    HELP_TG = '''Ⓣ-ɢʀᴀᴘʜ
 
-Telegraph Commands:
+Ⓣ-ɢʀᴀᴘʜ ᴄᴏᴍᴍᴀɴᴅꜱ:
 
-Create A Telegraph Link Any Media!
+ᴄʀᴇᴀᴛᴇ ᴀ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ᴀɴʏ ᴍᴇᴅɪᴀ!
 
-⊹ /tgm [Reply To Any Media]
-⊹ /tgt [Reply To Any Media]
+◌ /tgm [ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇᴅɪᴀ]
+◌ /tgt [ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇᴅɪᴀ]
 '''
-   
-    HELP_TD = '''Truth-Dare
+    HELP_Source = '''Sᴏᴜʀᴄᴇ
 
-Here Is The Help For The Truth-Dare Module:
+Tʜɪs ᴍᴏᴅᴜᴇ ᴘʀᴏᴠɪᴅᴇs ᴜᴛɪɪᴛʏ ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ ᴜsᴇʀs ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ.:
 
-Truth And Dare
-⊹ /truth : Sends A Random Truth String.
-⊹ /dare : Sends A Random Dare String.
+Sᴏᴜʀᴄᴇ ᴍᴏᴅᴜʟᴇ:
+
+◌ /ʀᴇᴘᴏ : Gᴇᴛ ᴛʜᴇ ɪɴᴋ ᴛᴏ ᴛʜᴇ ʙᴏᴛ's sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʀᴇᴘᴏsɪᴛᴏʀʏ.
 '''
-    HELP_Quiz = '''Quiz
+    HELP_TD = '''Tʀᴜᴛʜ-ᗪᴀʀᴇ
 
-Here  Is The Help For The Quiz Module:
+ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ Tʀᴜᴛʜ-ᗪᴀʀᴇ ᴍᴏᴅᴜʟᴇ:
 
-Quiz
-⊹ /quiz - To Get An Random Quiz
+ᴛʀᴜᴛʜ ᴀɴᴅ ᴅᴀʀᴇ
+◌ /truth : sᴇɴᴅs ᴀ ʀᴀɴᴅᴏᴍ ᴛʀᴜᴛʜ sᴛʀɪɴɢ.
+◌ /dare : sᴇɴᴅs ᴀ ʀᴀɴᴅᴏᴍ ᴅᴀʀᴇ sᴛʀɪɴɢ.
 '''
-    HELP_TTS = '''TTS
+    HELP_Quiz = '''Qᴜɪᴢ
 
-Here Is The Help For The TTS Module:
+ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ Qᴜɪᴢ ᴍᴏᴅᴜʟᴇ:
 
-⊹ TTS
-⊹ /tts : [Text]
+Qᴜɪᴢ
+◌ /quiz - ᴛᴏ ɢᴇᴛ ᴀɴ ʀᴀɴᴅᴏᴍ ǫᴜɪᴢ
+'''
+    HELP_TTS = '''ᴛᴛs
 
-⊹ ᴜsᴀɢᴇ ➛ Text To Speech
+ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ᴛᴛs ᴍᴏᴅᴜʟᴇ:
+
+❀ ᴛᴛs
+◌ /tts : [ᴛᴇxᴛ]
+
+◌ ᴜsᴀɢᴇ ➛ ᴛᴇxᴛ ᴛᴏ ᴀᴜᴅɪᴏ
 '''
     HELP_Radio = '''Radio
 
-Here Is The Help For The Radio Module:
+ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ Radio ᴍᴏᴅᴜʟᴇ:
 
-⊹ /radio - To Play Radio In The Voice Chat.
+◌ /radio - ᴛᴏ ᴘʟᴀʏ ʀᴀᴅɪᴏ ɪɴ ᴛʜᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.
 '''
-    HELP_Q = '''Quotly
+    HELP_Q = '''ǫᴜᴏᴛʟʏ
 
-Here Is The Help For Quotly Module:
+ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ǫᴜᴏᴛʟʏ ᴍᴏᴅᴜʟᴇ:
 
-⊹ /q : Create A Quote From The Message
+◌ /q : ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇssᴀɢᴇ
 
-⊹ /q r : Create A Quote From The Message With Reply
+◌ /q r : ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ ʀᴇᴘʟʏ
 '''
-    
-    
+
+
     fullpromote = {
     'can_change_info': True,
     'can_post_messages': True,
