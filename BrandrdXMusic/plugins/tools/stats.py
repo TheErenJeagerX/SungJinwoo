@@ -1,3 +1,4 @@
+import asyncio
 import platform
 from sys import version as pyver
 
@@ -13,36 +14,48 @@ from BrandrdXMusic import app
 from BrandrdXMusic.core.userbot import assistants
 from BrandrdXMusic.misc import SUDOERS, mongodb
 from BrandrdXMusic.plugins import ALL_MODULES
-from BrandrdXMusic.utils.database import get_served_chats, get_served_users, get_sudoers, get_queries
+from BrandrdXMusic.utils.database import get_served_chats, get_served_users, get_sudoers
 from BrandrdXMusic.utils.decorators.language import language, languageCB
 from BrandrdXMusic.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
 
-
 @app.on_message(filters.command(["stats", "gstats"]) & filters.group & ~BANNED_USERS)
 @language
 async def stats_global(client, message: Message, _):
-    upl = stats_buttons(_, True if message.from_user.id in SUDOERS else False)
+    # Check if the user is in SUDOERS
+    if message.from_user.id not in SUDOERS:
+        return await message.reply_text("🚫 You are not authorized to use this command.")
+    
+    # Generate stats buttons
+    upl = stats_buttons(_, True)
+    
+    # Send the stats photo with caption
     await message.reply_photo(
         photo=config.STATS_IMG_URL,
         caption=_["gstats_2"].format(app.mention),
         reply_markup=upl,
     )
+    await asyncio.sleep(15)
 
 
 @app.on_callback_query(filters.regex("stats_back") & ~BANNED_USERS)
 @languageCB
 async def home_stats(client, CallbackQuery, _):
+    if CallbackQuery.from_user.id not in SUDOERS:
+        return
     upl = stats_buttons(_, True if CallbackQuery.from_user.id in SUDOERS else False)
     await CallbackQuery.edit_message_text(
         text=_["gstats_2"].format(app.mention),
         reply_markup=upl,
     )
+    await asyncio.sleep(15)
 
 
 @app.on_callback_query(filters.regex("TopOverall") & ~BANNED_USERS)
 @languageCB
 async def overall_stats(client, CallbackQuery, _):
+    if CallbackQuery.from_user.id not in SUDOERS:
+        return 
     await CallbackQuery.answer()
     upl = back_stats_buttons(_)
     try:
@@ -52,14 +65,12 @@ async def overall_stats(client, CallbackQuery, _):
     await CallbackQuery.edit_message_text(_["gstats_1"].format(app.mention))
     served_chats = len(await get_served_chats())
     served_users = len(await get_served_users())
-    total_queries = await get_queries()
     text = _["gstats_3"].format(
         app.mention,
         len(assistants),
         len(BANNED_USERS),
         served_chats,
         served_users,
-        total_queries,
         len(ALL_MODULES),
         len(SUDOERS),
         config.AUTO_LEAVING_ASSISTANT,
@@ -72,6 +83,7 @@ async def overall_stats(client, CallbackQuery, _):
         await CallbackQuery.message.reply_photo(
             photo=config.STATS_IMG_URL, caption=text, reply_markup=upl
         )
+    await asyncio.sleep(15)
 
 
 @app.on_callback_query(filters.regex("bot_stats_sudo"))
@@ -135,3 +147,5 @@ async def bot_stats(client, CallbackQuery, _):
         await CallbackQuery.message.reply_photo(
             photo=config.STATS_IMG_URL, caption=text, reply_markup=upl
         )
+    await asyncio.sleep(15)
+# lode ka code 😂😂😂    
