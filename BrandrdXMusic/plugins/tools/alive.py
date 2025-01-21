@@ -10,13 +10,7 @@ from config import MUSIC_BOT_NAME
 async def start(client: Client, message: Message):
     await message.reply_video(
         video=f"https://files.catbox.moe/1gw87u.mp4",
-        caption=f"Hey {message.from_user.mention}\n\nI'm {MUSIC_BOT_NAME}\n\n•  sᴜɴɢ ᴊɪɴ ᴡᴏᴏ ɪs ᴀʟɪᴠᴇ •
-┏────✦────────┓
-  ★ ʙᴏᴛ ᴠᴇʀsɪᴏɴ : 2.0
-  ★ ᴩʏʀᴏɢʀᴀᴍ : 2.0.106
-  ★ ᴅᴇᴠᴇʟᴏᴘᴇʀ : @TheErenYeager & @EminenceCurse
-  ★ sᴜᴘᴘᴏʀᴛ : @Ahjin_Sprt
-┗────✦────────┛\n\n",
+        caption=f"ʜᴇʏ {message.from_user.mention}\n\nɪ'ᴍ {MUSIC_BOT_NAME}\n\nʜᴇʏ ᴛʜᴇʀᴇ, ɪ'ᴍ ᴀʟɪᴠᴇ.",
         reply_markup=InlineKeyboardMarkup(
             [
                [
@@ -34,7 +28,7 @@ async def start(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗑️ Close", callback_data="close"
+                        "ᴄʟᴏsᴇ 🗑", callback_data="close"
                     )
                 ],
             ]
