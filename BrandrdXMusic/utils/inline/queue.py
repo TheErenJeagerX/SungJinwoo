@@ -37,7 +37,7 @@ def queue_markup(
             ),
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
-                callback_data="close",
+                callback_data="ᴄʟᴏsᴇ 🗑",
             ),
         ],
     ]
@@ -66,10 +66,10 @@ def queue_back_markup(_, CPLAY):
 def aq_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="ᴘᴀᴜsᴇ", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="⏸", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="▶️", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="⏩", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="⏹", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
@@ -79,7 +79,7 @@ def aq_markup(_, chat_id):
                 text="• sᴜᴘᴘᴏʀᴛ •", url=f"https://t.me/Ahjin_Sprt"
             ),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="ᴄʟᴏsᴇ 🗑")],
     ]
     return buttons
 
@@ -99,16 +99,10 @@ def queuemarkup(_, vidid, chat_id):
                 text="Pause",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
-            InlineKeyboardButton(text="Stop", callback_data=f"ADMIN Stop|{chat_id}"),
-            InlineKeyboardButton(text="Skip", callback_data=f"ADMIN Skip|{chat_id}"),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Resume", callback_data=f"ADMIN Resume|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="Replay", callback_data=f"ADMIN Replay|{chat_id}"
-            ),
+            InlineKeyboardButton(text="⏸", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="▶️", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="⏩", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="⏹", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
