@@ -50,8 +50,7 @@ async def userdel(client, message: Message, _):
 async def sudoers_list(client, message: Message, _):
     
     if message.from_user.id not in SUDOERS and message.from_user.id != OWNER_ID:
-        return await message.reply_text("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇss ᴛᴏ ᴜsᴇ ᴛʜɪs.
-ᴠɪsɪᴛ @Ahjin_Sprt")
+        return await message.reply_text("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇss ᴛᴏ ᴜsᴇ ᴛʜɪs. ᴠɪsɪᴛ @Ahjin_Sprt")
 
     text = _["sudo_5"]
     try:
