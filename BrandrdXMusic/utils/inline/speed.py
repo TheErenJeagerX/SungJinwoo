@@ -33,7 +33,7 @@ def speed_markup(_, chat_id):
             [
                 InlineKeyboardButton(
                     text=_["CLOSE_BUTTON"],
-                    callback_data="close",
+                    callback_data="ᴄʟᴏsᴇ 🗑️",
                 ),
             ],
         ]
