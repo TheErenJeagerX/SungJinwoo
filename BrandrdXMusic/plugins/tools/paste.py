@@ -51,11 +51,11 @@ async def paste_func(_, message):
     link = await HottyBin(content)
     preview = link 
     button = InlineKeyboard(row_width=1)
-    button.add(InlineKeyboardButton(text="• ᴘᴀsᴛᴇ ʟɪɴᴋ •", url=link))
+    button.add(InlineKeyboardButton(text="• Paste Link •", url=link))
 
     await m.delete()
     try:
-        await message.reply("ʜᴇʀᴇ ɪs ʏᴏᴜʀ ᴘᴀsᴛᴇ ʟɪɴᴋ :", quote=False, reply_markup=button)
+        await message.reply("Here Is Your Paste Link :", quote=False, reply_markup=button)
         
     except Exception:
         pass
