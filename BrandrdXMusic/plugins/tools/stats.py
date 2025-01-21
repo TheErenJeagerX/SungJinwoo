@@ -24,7 +24,7 @@ from config import BANNED_USERS
 async def stats_global(client, message: Message, _):
     # Check if the user is in SUDOERS
     if message.from_user.id not in SUDOERS:
-        return await message.reply_text("🚫 You are not authorized to use this command.")
+        return await message.reply_text("📓 ᴏɴʟʏ sʜᴀᴅᴏᴡ ᴍᴏɴᴀʀᴄʜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ.")
     
     # Generate stats buttons
     upl = stats_buttons(_, True)
