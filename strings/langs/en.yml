@@ -88,8 +88,10 @@ admin_37 : "sᴜᴄᴄᴇssғᴜʟʟʏ ɢᴏᴛ <code>{0}</code> ᴜᴘᴠᴏᴛ
 admin_38 : "» ᴀᴅᴅᴇᴅ 1 ᴜᴘᴠᴏᴛᴇ."
 admin_39 : "» ʀᴇᴍᴏᴠᴇᴅ 1 ᴜᴘᴠᴏᴛᴇ."
 admin_40 : "ᴜᴘᴠᴏᴛᴇᴅ."
-start_1 : "{0}\nHey there, I'm alive and kicking! 🎉\n\n<b>✫ ᴜᴘᴛɪᴍᴇ :</b> {1}"
-start_2 = "<b>Hey</b> {0},\n\nI'm {1}!\n\nA fast & advanced Py-TgCalls music bot with many useful features. 🎶\n\n<b><u>Lag-Free Music :</b></u> 24x7 Non-stop music, no lag, no ads! 🚀\n\n<b>Click on the Help & Commands to check my amazing features.</b>"
+
+start_1 : "{0} 
+Hey There, I'm Alive.\n\n<b>✫ ᴜᴘᴛɪᴍᴇ :</b> {1}"
+start_2 : "<b>Hey</b> {0},\n\nI'm {1} !\n\nA Fast & Advance Py-TgCalls Music Bot With Many Useful Features.\n\n<b><u>Lag Free Music :</b></u> 24x7 Non-stop Music Play No Lag No Ads.\n\n<b>Click on The Help & Commands To Check My Features.</b>"
 start_3 : "ʜᴇʏ {0},\nᴛʜɪs ɪs {1}\n\nThanks For Adding Me In {2}, {3} Can Now Play Songs In This Chat."
 start_4 : "🎄 <b>sᴜᴘᴇʀɢʀᴏᴜᴘ ɴᴇᴇᴅᴇᴅ</b> 🎄\n\nᴘʟᴇᴀsᴇ ᴄᴏɴᴠᴇʀᴛ ʏᴏᴜʀ <b>ɢʀᴏᴜᴘ</b> ᴛᴏ <b>sᴜᴘᴇʀɢʀᴏᴜᴘ</b> ᴀɴᴅ ᴛʜᴇɴ ᴀᴅᴅ ᴍᴇ ᴀɢᴀɪɴ.\n\n<b>ʜᴏᴡ ᴛᴏ ᴍᴀᴋᴇ sᴜᴘᴇʀɢʀᴏᴜᴘ ?</b>\n- ᴍᴀᴋᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ's ᴄʜᴀᴛ ʜɪsᴛᴏʀʏ <b>ᴠɪsɪʙʟᴇ</b> ᴏɴᴄᴇ."
 start_5 : "<b>↝ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛ ↜</b>\n\nᴛʜɪs ᴄʜᴀᴛ ɪs ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴏɴ {0} ᴅᴀᴛᴀʙᴀsᴇ.\nʀᴇǫᴜᴇsᴛ ᴀ <a href={1}>sᴜᴅᴏ ᴜsᴇʀ</a> ᴛᴏ ᴜɴʙʟᴀᴄᴋʟɪsᴛ ʏᴏᴜʀ ᴄʜᴀᴛ ᴏʀ ᴠɪsɪᴛ <a href={2}>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ.</a>"
